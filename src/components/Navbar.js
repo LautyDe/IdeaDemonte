@@ -1,3 +1,6 @@
+import "./Navbar.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function Navbar() {
   return (
     <header>
@@ -7,7 +10,7 @@ function Navbar() {
             <a class="navbar-brand" href="#start">
               <img
                 class="logo-img"
-                src="../assets/LogoBarberStyle.png"
+                src={require("../assets/LogoBarberStyle.png")}
                 alt="Logo BarberStyle"
               />
             </a>

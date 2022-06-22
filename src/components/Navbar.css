@@ -1,0 +1,33 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header nav div div {
+  width: 30%;
+  display: flex;
+}
+header nav div div a {
+  width: 64px;
+}
+header nav div div a .logo-img {
+  width: 64px;
+  height: 64px;
+}
+header nav div div a {
+  text-decoration: none;
+  place-self: center;
+}
+header nav div div a h1 {
+  margin: 0 auto;
+  color: white;
+  vertical-align: center;
+  text-decoration: none;
+}
+header nav div .navbar-nav {
+  margin: 0 auto;
+  justify-content: center;
+}
+header nav div .navbar-nav .nav-item {
+  padding: 0 10%;
+}
