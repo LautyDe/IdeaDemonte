@@ -1,0 +1,7 @@
+header nav div .navbar-nav {
+  margin: 0 auto;
+  justify-content: center;
+}
+header nav div .navbar-nav .nav-item {
+  padding: 0 10%;
+}

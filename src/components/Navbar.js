@@ -1,5 +1,7 @@
 import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
+import CartWidget from "./CartWidget";
 
 function Navbar() {
   return (
@@ -57,11 +59,7 @@ function Navbar() {
                 </a>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link active" href="./cart.html">
-                  Cart
-                </a>
-              </li>
+              <CartWidget />
             </ul>
           </div>
         </div>
