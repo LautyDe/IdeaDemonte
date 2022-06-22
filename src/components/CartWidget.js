@@ -3,11 +3,13 @@ import "bootstrap";
 import "./CartWidget.css";
 
 function CartWidget() {
-  <li class="nav-item">
-    <a class="nav-link active" href="./cart.html">
-      Cart
-    </a>
-  </li>;
+  return (
+    <li class="nav-item">
+      <a class="nav-link active" href="./cart.html">
+        <img class="shopImg" src={require("../assets/carrito-shop.jpg")} />
+      </a>
+    </li>
+  );
 }
 
 export default CartWidget;
