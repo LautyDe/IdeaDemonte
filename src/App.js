@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import ItemListContainer from "./components/ItemListContainer";
-import Contador from "./components/ItemCount";
 import ItemCount from "./components/ItemCount";
 
 function App() {
@@ -8,7 +7,9 @@ function App() {
     <div>
       <Navbar />
       <ItemListContainer />
-      <ItemCount />
+      <ItemCount stock="6" />
+      <ItemCount stock="4" />
+      <ItemCount stock="5" />
     </div>
   );
 }

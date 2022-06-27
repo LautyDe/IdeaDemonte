@@ -3,10 +3,12 @@ import "bootstrap";
 import "./ItemCount";
 import { useState } from "react";
 
-function ItemCount() {
+function ItemCount(props) {
   const [num, setNum] = useState(0);
   const sumar = () => {
-    setNum(num + 1);
+    if (num < props.stock) {
+      setNum(num + 1);
+    }
   };
   const resta = () => {
     if (num > 0) {
