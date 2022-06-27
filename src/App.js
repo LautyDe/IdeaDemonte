@@ -7,9 +7,9 @@ function App() {
     <div>
       <Navbar />
       <ItemListContainer />
-      <ItemCount stock="6" />
-      <ItemCount stock="4" />
-      <ItemCount stock="5" />
+      <ItemCount stock="6" initial="0" />
+      <ItemCount stock="4" initial="0" />
+      <ItemCount stock="5" initial="0" />
     </div>
   );
 }

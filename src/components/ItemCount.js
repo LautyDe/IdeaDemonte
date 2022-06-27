@@ -4,7 +4,7 @@ import "./ItemCount";
 import { useState } from "react";
 
 function ItemCount(props) {
-  const [num, setNum] = useState(0);
+  const [num, setNum] = useState(parseInt(props.initial));
   const sumar = () => {
     if (num < props.stock) {
       setNum(num + 1);
