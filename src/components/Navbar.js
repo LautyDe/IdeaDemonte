@@ -6,10 +6,10 @@ import CartWidget from "./CartWidget";
 function Navbar() {
   return (
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container-fluid">
           <div>
-            <a class="navbar-brand" href="#start">
+            <a className="navbar-brand" href="#start">
               <img
                 class="logo-img"
                 src={require("../assets/LogoBarberStyle.png")}
@@ -21,7 +21,7 @@ function Navbar() {
             </a>
           </div>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -29,32 +29,32 @@ function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#services">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link active" href="#services">
                   Services
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#works">
+              <li className="nav-item">
+                <a className="nav-link active" href="#works">
                   Works
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#faq">
+              <li className="nav-item">
+                <a className="nav-link active" href="#faq">
                   FAQ
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#reviews">
+              <li className="nav-item">
+                <a className="nav-link active" href="#reviews">
                   Reviews
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="./products.html">
+              <li className="nav-item">
+                <a className="nav-link active" href="./products.html">
                   Shop
                 </a>
               </li>

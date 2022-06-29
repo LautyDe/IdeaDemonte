@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
-import "./ItemCount";
+import "./ItemCount.css";
 import { useState } from "react";
 
 function ItemCount(props) {
@@ -21,9 +21,15 @@ function ItemCount(props) {
   return (
     <>
       <p>{num}</p>
-      <button onClick={resta}>-</button>
-      <button onClick={sumar}>+</button>
-      <button onClick={reiniciar}>Reiniciar</button>
+      <button className="minusButton" onClick={resta}>
+        -
+      </button>
+      <button className="plusButton" onClick={sumar}>
+        +
+      </button>
+      <button className="restartButton" onClick={reiniciar}>
+        Reiniciar
+      </button>
     </>
   );
 }

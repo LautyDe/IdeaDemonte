@@ -1,9 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import "./ItemListContainer.css";
+import Item from "./Item";
 
 function ItemListContainer() {
-  return <h1>Hola</h1>;
+  return <Item />;
 }
 
 export default ItemListContainer;
