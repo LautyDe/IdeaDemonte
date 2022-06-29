@@ -19,18 +19,20 @@ function ItemCount(props) {
     setNum(0);
   };
   return (
-    <>
+    <div className="count">
       <p>{num}</p>
-      <button className="minusButton" onClick={resta}>
-        -
-      </button>
-      <button className="plusButton" onClick={sumar}>
-        +
-      </button>
-      <button className="restartButton" onClick={reiniciar}>
-        Reiniciar
-      </button>
-    </>
+      <div className="countButtons">
+        <button className="minusButton" onClick={resta}>
+          -
+        </button>
+        <button className="plusButton" onClick={sumar}>
+          +
+        </button>
+        <button className="restartButton" onClick={reiniciar}>
+          Reiniciar
+        </button>
+      </div>
+    </div>
   );
 }
 

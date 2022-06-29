@@ -1,0 +1,12 @@
+.cuerpo {
+  height: 350px;
+  background-color: cornflowerblue;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.catalogo {
+  display: flex;
+  justify-content: space-around;
+}

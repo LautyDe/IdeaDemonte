@@ -1,0 +1,13 @@
+.card {
+  height: 250px;
+  width: 175px;
+  background-color: teal;
+  align-items: center;
+  justify-content: center;
+}
+
+.count {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
