@@ -7,7 +7,7 @@ function Card(props) {
   return (
     <div className="card">
       <h5>{props.name}</h5>
-      <p>{props.price}</p>
+      <p>${props.price}</p>
       <p>(Stock disponible: {props.stock})</p>
       <button>Ver info</button>
       <div>
