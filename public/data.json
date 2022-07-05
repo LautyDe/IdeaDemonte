@@ -5,7 +5,8 @@
     "price": 6799,
     "stock": 8,
     "initial": 0,
-    "description": "Tamaño ligero y compacto para máxima comodidad y control. La potente batería de iones de litio ofrece 60 minutos de tiempo de funcionamiento inalámbrico con una sola carga. Con una clasificación IPX4 de resistencia al agua."
+    "description": "Tamaño ligero y compacto para máxima comodidad y control. La potente batería de iones de litio ofrece 60 minutos de tiempo de funcionamiento inalámbrico con una sola carga. Con una clasificación IPX4 de resistencia al agua.",
+    "image": "src/assets/product-1.jpg"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "price": 13999,
     "stock": 4,
     "initial": 0,
-    "description": "Cuchillas de afeitado de cabeza escalonada para un afeitado más apurado. Ideal para terminar desvanecimientos y eliminar rastrojos. Ofrece hasta 80 minutos de autonomía con una sola carga. La mejor de su categoria."
+    "description": "Cuchillas de afeitado de cabeza escalonada para un afeitado más apurado. Ideal para terminar desvanecimientos y eliminar rastrojos. Ofrece hasta 80 minutos de autonomía con una sola carga. La mejor de su categoria.",
+    "image": "src/assets/product-1.jpg"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "price": 9999,
     "stock": 6,
     "initial": 0,
-    "description": "Con esta afeitadora disfrutar de un producto de calidad, cuyos resultados estéticos son excelentes, es posible. Al realizar movimientos laterales, las láminas de tu afeitadora dejan tu barba o pelo con un largo ideal y brindan un corte preciso."
+    "description": "Con esta afeitadora disfrutar de un producto de calidad, cuyos resultados estéticos son excelentes, es posible. Al realizar movimientos laterales, las láminas de tu afeitadora dejan tu barba o pelo con un largo ideal y brindan un corte preciso.",
+    "image": "src/assets/product-1.jpg"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "price": 2799,
     "stock": 7,
     "initial": 0,
-    "description": "Nuestra navaja de afeitar del peluquero está diseñada para el uso profesional y barbería. Esta NAVAJA tiene una cerradura de resorte para asegurar la cuchilla en su lugar."
+    "description": "Nuestra navaja de afeitar del peluquero está diseñada para el uso profesional y barbería. Esta NAVAJA tiene una cerradura de resorte para asegurar la cuchilla en su lugar.",
+    "image": "/src/assets/product-1.jpg"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "price": 3999,
     "stock": 4,
     "initial": 0,
-    "description": "Esta navaja llevará a cabo las láminas del modelo profesional o como se sugiere. Valor incomparable y de excelente calidad calidad. Está diseñado para uso barbería."
+    "description": "Esta navaja llevará a cabo las láminas del modelo profesional o como se sugiere. Valor incomparable y de excelente calidad calidad. Está diseñado para uso barbería.",
+    "image": "src/assets/product-1.jpg"
   },
   {
     "id": 6,
@@ -45,6 +50,7 @@
     "price": 1399,
     "stock": 8,
     "initial": 0,
-    "description": "Navaja de acero inoxidable, con diseño ergonomico con terminacion estetica de be barberia. Ideal para cortes y terminaciones de nuca, patillas y afeitados al ras."
+    "description": "Navaja de acero inoxidable, con diseño ergonomico con terminacion estetica de be barberia. Ideal para cortes y terminaciones de nuca, patillas y afeitados al ras.",
+    "image": "src/assets/product-1.jpg"
   }
 ]

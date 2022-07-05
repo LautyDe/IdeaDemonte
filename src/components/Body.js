@@ -29,6 +29,8 @@ function Body() {
               price={i.price}
               stock={i.stock}
               initial={i.initial}
+              description={i.description}
+              image={i.image}
             />
           ))}
       </div>
