@@ -9,6 +9,7 @@ function Card(props) {
   return (
     <div className="card">
       <h5>{props.name}</h5>
+      <img src={imgPath} className="prevImg" />
       <p>${props.price}</p>
       <p>(Stock disponible: {props.stock})</p>
       <button

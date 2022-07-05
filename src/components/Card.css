@@ -1,6 +1,6 @@
 .card {
-  height: 250px;
-  width: 175px;
+  height: 320px;
+  width: 200px;
   background-color: teal;
   align-items: center;
   justify-content: center;
@@ -10,4 +10,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.prevImg {
+  width: 80px;
+  height: 90px;
 }
