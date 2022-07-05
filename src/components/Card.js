@@ -3,9 +3,9 @@ import "bootstrap";
 import "./Card.css";
 import ItemCount from "./ItemCount";
 import Swal from "sweetalert2";
-import navajaBlack from "../assets";
 
 function Card(props) {
+  const imgPath = require(`../assets/${props.image}`);
   return (
     <div className="card">
       <h5>{props.name}</h5>
@@ -20,7 +20,7 @@ function Card(props) {
             confirmButtonText: "Agregar al carrito",
             showCancelButton: true,
             confirmButtonText: "Agregar al carrito",
-            imageUrl: `${navajaBlack}`,
+            imageUrl: `${imgPath}`,
             imageWidth: 320,
             imageHeight: 280,
             imageAlt: "Custom image",
