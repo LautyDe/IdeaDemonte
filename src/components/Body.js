@@ -31,6 +31,7 @@ function Body() {
               initial={i.initial}
               description={i.description}
               image={i.image}
+              id={i.id}
             />
           ))}
       </div>

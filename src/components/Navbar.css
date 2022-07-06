@@ -31,3 +31,8 @@ header nav div .navbar-nav {
 header nav div .navbar-nav .nav-item {
   padding: 0 10%;
 }
+
+.myactive:hover,
+.myactive:active {
+  color: darkred;
+}

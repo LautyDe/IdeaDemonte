@@ -1,24 +1,23 @@
 import "./Navbar.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
 import CartWidget from "./CartWidget";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-black">
         <div className="container-fluid">
           <div>
-            <a className="navbar-brand" href="#start">
+            <NavLink className="navbar-brand" to="/home">
               <img
                 class="logo-img"
                 src={require("../assets/LogoBarberStyle.png")}
                 alt="Logo BarberStyle"
               />
-            </a>
-            <a href="#start">
+            </NavLink>
+            <NavLink to="/home">
               <h1>BarberStyle</h1>
-            </a>
+            </NavLink>
           </div>
           <button
             className="navbar-toggler"
@@ -34,29 +33,29 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" href="#services">
+                <NavLink className="nav-link active" to="/home">
                   Services
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#works">
+                <NavLink className="nav-link active" to="/home">
                   Works
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#faq">
+                <NavLink className="nav-link active" to="/home">
                   FAQ
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#reviews">
+                <NavLink className="nav-link active" to="/home">
                   Reviews
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="./products.html">
+                <NavLink className="nav-link active" to="/products">
                   Shop
-                </a>
+                </NavLink>
               </li>
 
               <CartWidget />

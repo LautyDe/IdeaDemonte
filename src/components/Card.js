@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import "./Card.css";
 import ItemCount from "./ItemCount";
-import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 function Card(props) {
   const imgPath = require(`../assets/${props.image}`);
@@ -12,28 +12,9 @@ function Card(props) {
       <img src={imgPath} className="prevImg" />
       <p>${props.price}</p>
       <p>(Stock disponible: {props.stock})</p>
-      <button
-        onClick={() => {
-          Swal.fire({
-            title: `${props.name}`,
-            text: `${props.description}`,
-            icon: `${props.image}`,
-            confirmButtonText: "Agregar al carrito",
-            showCancelButton: true,
-            confirmButtonText: "Agregar al carrito",
-            imageUrl: `${imgPath}`,
-            imageWidth: 320,
-            imageHeight: 280,
-            imageAlt: "Custom image",
-          }).then((result) => {
-            if (result.isConfirmed) {
-              Swal.fire("Agregado al carrito!", "", "success");
-            }
-          });
-        }}
-      >
-        Ver info
-      </button>
+      <Link to={`/products/${props.id}`}>
+        <button>Ver info</button>
+      </Link>
       <div>
         <ItemCount initial={props.initial} stock={props.stock} />
       </div>
