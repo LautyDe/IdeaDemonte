@@ -8,3 +8,8 @@
 .count {
   margin: 0 auto;
 }
+
+.detailImg {
+  height: 240px;
+  width: 200px;
+}
