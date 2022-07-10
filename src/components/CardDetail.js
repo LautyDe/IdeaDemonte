@@ -5,14 +5,17 @@ import "./CardDetail.css";
 
 function CardDetail() {
   const params = useParams();
-
+  const [imgPath, setImgPath] = useState("");
   const [cardFetch, setCardFetch] = useState([]);
 
   const fetchDetail = () => {
     fetch("../data.json")
       .then((response) => response.json())
       .then((data) => {
-        setCardFetch(data.filter((i) => i.id == params.id));
+        let dataFetch = data.find((i) => i.id == params.id);
+        setCardFetch(dataFetch);
+        let requireImg = require(`../assets${dataFetch.image}`);
+        setImgPath(requireImg);
       });
   };
 
@@ -20,18 +23,16 @@ function CardDetail() {
     fetchDetail();
   }, []);
 
-  const imgPath = require(`../assets${cardFetch[0].image}`);
-
   return (
     <section className="container">
-      {cardFetch.length !== 0 && <h1>{cardFetch[0].name}</h1>}
-      {cardFetch.length !== 0 && <img src={imgPath} className="detailImg" />}
-      {cardFetch.length !== 0 && <p>{cardFetch[0].description}</p>}
-      {cardFetch.length !== 0 && (
-        <p>{`Stock disponible: ${cardFetch[0].stock}`}</p>
-      )}
-      {cardFetch.length !== 0 && (
-        <ItemCount initial={cardFetch[0].initial} stock={cardFetch[0].stock} />
+      {cardFetch.id !== undefined && (
+        <>
+          <h1>{cardFetch.name}</h1>
+          <img src={imgPath} alt="" className="detailImg" />
+          <p>{cardFetch.description}</p>
+          <p>{`Stock disponible: ${cardFetch.stock}`}</p>
+          <ItemCount initial={cardFetch.initial} stock={cardFetch.stock} />
+        </>
       )}
     </section>
   );
