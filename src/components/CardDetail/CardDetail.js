@@ -44,9 +44,17 @@ function CardDetail() {
             />
           )}
           {!noCount && (
-            <p className="redirection">
-              Su producto ha sido agregado al carrito!
-            </p>
+            <>
+              <p className="redirection">
+                Su producto ha sido agregado al carrito!
+              </p>
+              <NavLink to="/products">
+                <button>Seguir comprando</button>
+              </NavLink>
+              <NavLink to="/cart">
+                <button>Terminar compra</button>
+              </NavLink>
+            </>
           )}
         </>
       )}
