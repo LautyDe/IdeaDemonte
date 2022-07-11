@@ -15,6 +15,8 @@ function Shop() {
     }, 1000);
   }, []);
 
+  clearTimeout();
+
   return (
     <section className="cuerpo">
       <div>
