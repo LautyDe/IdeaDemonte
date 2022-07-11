@@ -1,18 +1,14 @@
 .card {
-  height: 320px;
-  width: 200px;
-  background-color: teal;
+  height: auto;
+  width: 400px;
+  background-color: black;
   align-items: center;
   justify-content: center;
-}
-
-.count {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  color: white;
+  margin: 20px 0;
 }
 
 .prevImg {
-  width: 80px;
-  height: 90px;
+  width: 200px;
+  height: 240px;
 }

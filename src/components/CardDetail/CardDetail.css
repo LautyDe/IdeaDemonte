@@ -3,6 +3,8 @@
   align-items: center;
   text-align: center;
   width: 50%;
+  background-color: black;
+  color: white;
 }
 
 .count {

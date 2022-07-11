@@ -18,8 +18,8 @@ function Shop() {
   return (
     <section className="cuerpo">
       <div>
-        <h2>Catalogo</h2>
-        <p>Mira nuestros productos!</p>
+        <h2 className="title">Catalogo</h2>
+        <p className="intro">Mira nuestros productos!</p>
       </div>
       <div className="catalogo">
         {info &&

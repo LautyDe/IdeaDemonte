@@ -1,7 +1,7 @@
 .cuerpo {
-  height: 500px;
-  background-color: cornflowerblue;
-
+  height: auto;
+  background-color: black;
+  padding-top: 30px;
   justify-content: space-around;
   align-items: center;
 }
@@ -9,4 +9,12 @@
 .catalogo {
   display: flex;
   justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.title,
+.intro {
+  color: white;
+  display: flex;
+  justify-content: center;
 }
