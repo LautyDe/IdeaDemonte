@@ -1,10 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
-import "./Body.css";
+import "./Shop.css";
 import { useEffect, useState } from "react";
 import Card from "../Card/Card";
 
-function Body() {
+function Shop() {
   const [info, setInfo] = useState([]);
 
   useEffect(() => {
@@ -39,4 +39,4 @@ function Body() {
   );
 }
 
-export default Body;
+export default Shop;

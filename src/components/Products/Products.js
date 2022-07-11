@@ -1,7 +1,7 @@
-import Body from "../Body/Body";
+import Shop from "../Shop/Shop";
 
 function Products() {
-  return <Body />;
+  return <Shop />;
 }
 
 export default Products;
