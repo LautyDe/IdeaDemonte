@@ -43,6 +43,11 @@ function CardDetail() {
               stock={cardFetch.stock}
             />
           )}
+          {!noCount && (
+            <p className="redirection">
+              Su producto ha sido agregado al carrito!
+            </p>
+          )}
         </>
       )}
     </section>

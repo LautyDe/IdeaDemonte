@@ -11,7 +11,7 @@ import CardDetail from "./components/CardDetail/CardDetail";
 
 function App() {
   return (
-    <div>
+    <div className="generals">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
