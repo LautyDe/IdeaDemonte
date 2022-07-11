@@ -15,9 +15,6 @@ function Card(props) {
       <Link to={`/products/${props.id}`}>
         <button>Ver info</button>
       </Link>
-      <div>
-        <ItemCount initial={props.initial} stock={props.stock} />
-      </div>
     </div>
   );
 }
