@@ -2,9 +2,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import "./ItemCount.css";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function ItemCount(props) {
   const [num, setNum] = useState(parseInt(props.initial));
+
   const sumar = () => {
     if (num < props.stock) {
       setNum(num + 1);
@@ -15,9 +17,11 @@ function ItemCount(props) {
       setNum(num - 1);
     }
   };
-  const reiniciar = () => {
-    setNum(0);
+
+  const onAddHandler = (event) => {
+    event.props.onCount(false);
   };
+
   return (
     <div className="count">
       <p>{num}</p>
@@ -28,9 +32,11 @@ function ItemCount(props) {
         <button className="plusButton" onClick={sumar}>
           +
         </button>
-        <button className="restartButton" onClick={reiniciar}>
-          Reiniciar
-        </button>
+        <NavLink to="/cart">
+          <button className="onAdd" onClick={onAddHandler}>
+            Agregar al carrito!
+          </button>
+        </NavLink>
       </div>
     </div>
   );
