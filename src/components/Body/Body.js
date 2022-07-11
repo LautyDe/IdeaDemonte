@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import "./Body.css";
 import { useEffect, useState } from "react";
-import Card from "./Card";
+import Card from "../Card/Card";
 
 function Body() {
   const [info, setInfo] = useState([]);
@@ -12,7 +12,7 @@ function Body() {
       fetch("data.json")
         .then((resp) => resp.json())
         .then((data) => setInfo(data));
-    }, 2000);
+    }, 1000);
   }, []);
 
   return (

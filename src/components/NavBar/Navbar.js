@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import CartWidget from "./CartWidget";
+import CartWidget from "../CartWidget/CartWidget";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
@@ -11,7 +11,7 @@ function Navbar() {
             <NavLink className="navbar-brand" to="/home">
               <img
                 class="logo-img"
-                src={require("../assets/LogoBarberStyle.png")}
+                src={require("../../assets/LogoBarberStyle.png")}
                 alt="Logo BarberStyle"
               />
             </NavLink>

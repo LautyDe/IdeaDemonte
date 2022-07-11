@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ItemCount from "./ItemCount";
+import ItemCount from "../ItemCount/ItemCount";
 import "./CardDetail.css";
 
 function CardDetail() {
@@ -14,7 +14,7 @@ function CardDetail() {
       .then((data) => {
         let dataFetch = data.find((i) => i.id == params.id);
         setCardFetch(dataFetch);
-        let requireImg = require(`../assets${dataFetch.image}`);
+        let requireImg = require(`../../assets${dataFetch.image}`);
         setImgPath(requireImg);
       });
   };

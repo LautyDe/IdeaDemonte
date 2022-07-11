@@ -1,4 +1,4 @@
-import Body from "./Body";
+import Body from "../Body/Body";
 
 function Products() {
   return <Body />;

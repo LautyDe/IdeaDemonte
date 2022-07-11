@@ -1,13 +1,13 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import Navbar from "./components/NavBar/Navbar";
+import Home from "./components/Home/Home";
 import { Route, Routes } from "react-router-dom";
-import Products from "./components/Products";
-import Cart from "./components/Cart";
-import NotFound from "./components/NotFound";
-import CardDetail from "./components/CardDetail";
+import Products from "./components/Products/Products";
+import Cart from "./components/Cart/Cart";
+import NotFound from "./components/NotFound/NotFound";
+import CardDetail from "./components/CardDetail/CardDetail";
 
 function App() {
   return (

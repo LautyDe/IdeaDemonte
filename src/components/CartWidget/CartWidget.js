@@ -7,7 +7,7 @@ function CartWidget() {
   return (
     <li class="nav-item">
       <NavLink to="/cart">
-        <img class="shopImg" src={require("../assets/carrito-shop.jpg")} />
+        <img class="shopImg" src={require("../../assets/carrito-shop.jpg")} />
       </NavLink>
     </li>
   );

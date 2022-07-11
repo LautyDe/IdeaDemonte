@@ -1,11 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import "./Card.css";
-import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
 
 function Card(props) {
-  const imgPath = require(`../assets${props.image}`);
+  const imgPath = require(`../../assets${props.image}`);
   return (
     <div className="card">
       <h5>{props.name}</h5>
