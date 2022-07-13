@@ -7,7 +7,6 @@ import { Route, Routes } from "react-router-dom";
 import Products from "./components/Products/Products";
 import Cart from "./components/Cart/Cart";
 import NotFound from "./components/NotFound/NotFound";
-import CardDetail from "./components/CardDetail/CardDetail";
 import CardDetailContainer from "./components/CardDetailContainer/CardDetailContainer";
 
 function App() {

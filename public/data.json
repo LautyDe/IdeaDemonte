@@ -4,7 +4,6 @@
     "name": "Shaver GBS",
     "price": 6799,
     "stock": 8,
-    "initial": 1,
     "description": "Tamaño ligero y compacto para máxima comodidad y control. La potente batería de iones de litio ofrece 60 minutos de tiempo de funcionamiento inalámbrico con una sola carga. Con una clasificación IPX4 de resistencia al agua.",
     "image": "/shaverGBS.jpg"
   },
@@ -13,7 +12,6 @@
     "name": "Shaver BelProf",
     "price": 13999,
     "stock": 4,
-    "initial": 1,
     "description": "Cuchillas de afeitado de cabeza escalonada para un afeitado más apurado. Ideal para terminar desvanecimientos y eliminar rastrojos. Ofrece hasta 80 minutos de autonomía con una sola carga. La mejor de su categoria.",
     "image": "/shaverBelProf.jpg"
   },
@@ -22,7 +20,6 @@
     "name": "Shaver Kemei",
     "price": 9999,
     "stock": 6,
-    "initial": 1,
     "description": "Con esta afeitadora disfrutar de un producto de calidad, cuyos resultados estéticos son excelentes, es posible. Al realizar movimientos laterales, las láminas de tu afeitadora dejan tu barba o pelo con un largo ideal y brindan un corte preciso.",
     "image": "/shaverKemei.jpg"
   },
@@ -31,7 +28,6 @@
     "name": "Navaja Black",
     "price": 2799,
     "stock": 7,
-    "initial": 1,
     "description": "Nuestra navaja de afeitar del peluquero está diseñada para el uso profesional y barbería. Esta NAVAJA tiene una cerradura de resorte para asegurar la cuchilla en su lugar.",
     "image": "/navajaBlack.jpg"
   },
@@ -40,7 +36,6 @@
     "name": "Navaja Rodger",
     "price": 3999,
     "stock": 4,
-    "initial": 1,
     "description": "Esta navaja llevará a cabo las láminas del modelo profesional o como se sugiere. Valor incomparable y de excelente calidad calidad. Está diseñado para uso barbería.",
     "image": "/navajaRodger.jpg"
   },
@@ -49,7 +44,6 @@
     "name": "Navaja Standard",
     "price": 1399,
     "stock": 8,
-    "initial": 1,
     "description": "Navaja de acero inoxidable, con diseño ergonomico con terminacion estetica de be barberia. Ideal para cortes y terminaciones de nuca, patillas y afeitados al ras.",
     "image": "/navajaStandard.jpg"
   }

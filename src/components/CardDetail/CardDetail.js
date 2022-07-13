@@ -1,11 +1,15 @@
 import { NavLink } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
 import { useState } from "react";
+import useCartContext from "../../store/CartContext";
 
 function CardDetail(props) {
   const [noCount, setNoCount] = useState(false);
+  const { addToCart } = useCartContext();
 
   function onAdd(count) {
+    addToCart(props.item, count);
+    console.log("Agregado al cart: ", props.item, count);
     setNoCount(true);
   }
 
@@ -18,7 +22,7 @@ function CardDetail(props) {
         <p>{`Stock disponible: ${props.item.stock}`}</p>
         {!noCount && (
           <ItemCount
-            initial={props.item.initial}
+            initial={1}
             stock={props.item.stock}
             id={props.item.id}
             onAdd={onAdd}
