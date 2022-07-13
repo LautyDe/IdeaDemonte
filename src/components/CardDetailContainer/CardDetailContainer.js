@@ -7,7 +7,6 @@ function CardDetailContainer() {
   const params = useParams();
   const [cardFetch, setCardFetch] = useState([]);
   const [imgPath, setImgPath] = useState();
-  const [noCount, setNoCount] = useState(true);
 
   const fetchDetail = () => {
     fetch("../data.json")
@@ -24,18 +23,9 @@ function CardDetailContainer() {
     fetchDetail();
   }, []);
 
-  const onAddHandler = () => {
-    setNoCount(false);
-  };
-
   return (
     <section className="container">
-      <CardDetail
-        imgPath={imgPath}
-        item={cardFetch}
-        onCount={onAddHandler}
-        noCount={noCount}
-      />
+      <CardDetail imgPath={imgPath} item={cardFetch} />
     </section>
   );
 }

@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
+import { useState } from "react";
 
 function CardDetail(props) {
-  console.log(props.imgPath);
-  console.log(props.item.id);
-  console.log(props.onCount);
-  console.log(props.noCount);
+  const [noCount, setNoCount] = useState(false);
+
+  function onAdd(count) {
+    setNoCount(true);
+  }
 
   return (
     props.item.id !== undefined && (
@@ -14,15 +16,15 @@ function CardDetail(props) {
         <img src={props.imgPath} alt="" className="detailImg" />
         <p>{props.item.description}</p>
         <p>{`Stock disponible: ${props.item.stock}`}</p>
-        {props.noCount && (
+        {!noCount && (
           <ItemCount
-            onCount={props.item.onCount}
             initial={props.item.initial}
             stock={props.item.stock}
             id={props.item.id}
+            onAdd={onAdd}
           />
         )}
-        {!props.noCount && (
+        {noCount && (
           <>
             <p className="redirection">
               Su producto ha sido agregado al carrito!
@@ -31,7 +33,7 @@ function CardDetail(props) {
               <button>Seguir comprando</button>
             </NavLink>
             <NavLink to="/cart">
-              <button>Terminar compra</button>
+              <button>Ir al carrito</button>
             </NavLink>
           </>
         )}

@@ -4,26 +4,22 @@ import "./ItemCount.css";
 import { useState } from "react";
 
 function ItemCount(props) {
-  const [num, setNum] = useState(parseInt(props.initial));
+  const [count, setCount] = useState(parseInt(props.initial));
 
   const sumar = () => {
-    if (num < props.stock) {
-      setNum(num + 1);
+    if (count < props.stock) {
+      setCount(count + 1);
     }
   };
   const resta = () => {
-    if (num > 1) {
-      setNum(num - 1);
+    if (count > 1) {
+      setCount(count - 1);
     }
-  };
-
-  const onAddHandler = () => {
-    props.onCount(num, props.id);
   };
 
   return (
     <div className="count">
-      <p>{num}</p>
+      <p>{count}</p>
       <div className="countButtons">
         <button className="minusButton" onClick={resta}>
           -
@@ -31,7 +27,7 @@ function ItemCount(props) {
         <button className="plusButton" onClick={sumar}>
           +
         </button>
-        <button className="onAdd" onClick={onAddHandler}>
+        <button className="onAdd" onClick={() => props.onAdd(count)}>
           Agregar al carrito!
         </button>
       </div>
