@@ -12,14 +12,13 @@ function ItemCount(props) {
     }
   };
   const resta = () => {
-    if (num > 0) {
+    if (num > 1) {
       setNum(num - 1);
     }
   };
 
-  const onAddHandler = (event) => {
-    event.preventDefault();
-    props.onCount(false);
+  const onAddHandler = () => {
+    props.onCount(num, props.id);
   };
 
   return (

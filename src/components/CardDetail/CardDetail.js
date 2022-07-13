@@ -1,64 +1,42 @@
-import { useEffect, useState } from "react";
-import { useParams, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
-import "./CardDetail.css";
 
-function CardDetail() {
-  const params = useParams();
-  const [imgPath, setImgPath] = useState("");
-  const [cardFetch, setCardFetch] = useState([]);
-  const [noCount, setNoCount] = useState(true);
-
-  const fetchDetail = () => {
-    fetch("../data.json")
-      .then((response) => response.json())
-      .then((data) => {
-        let dataFetch = data.find((i) => i.id == params.id);
-        setCardFetch(dataFetch);
-        let requireImg = require(`../../assets${dataFetch.image}`);
-        setImgPath(requireImg);
-      });
-  };
-
-  useEffect(() => {
-    fetchDetail();
-  }, []);
-
-  const onAddHandler = () => {
-    setNoCount(false);
-  };
+function CardDetail(props) {
+  console.log(props.imgPath);
+  console.log(props.item.id);
+  console.log(props.onCount);
+  console.log(props.noCount);
 
   return (
-    <section className="container">
-      {cardFetch.id !== undefined && (
-        <>
-          <h1>{cardFetch.name}</h1>
-          <img src={imgPath} alt="" className="detailImg" />
-          <p>{cardFetch.description}</p>
-          <p>{`Stock disponible: ${cardFetch.stock}`}</p>
-          {noCount && (
-            <ItemCount
-              onCount={onAddHandler}
-              initial={cardFetch.initial}
-              stock={cardFetch.stock}
-            />
-          )}
-          {!noCount && (
-            <>
-              <p className="redirection">
-                Su producto ha sido agregado al carrito!
-              </p>
-              <NavLink to="/products">
-                <button>Seguir comprando</button>
-              </NavLink>
-              <NavLink to="/cart">
-                <button>Terminar compra</button>
-              </NavLink>
-            </>
-          )}
-        </>
-      )}
-    </section>
+    props.item.id !== undefined && (
+      <>
+        <h1>{props.name}</h1>
+        <img src={props.imgPath} alt="" className="detailImg" />
+        <p>{props.item.description}</p>
+        <p>{`Stock disponible: ${props.item.stock}`}</p>
+        {props.noCount && (
+          <ItemCount
+            onCount={props.item.onCount}
+            initial={props.item.initial}
+            stock={props.item.stock}
+            id={props.item.id}
+          />
+        )}
+        {!props.noCount && (
+          <>
+            <p className="redirection">
+              Su producto ha sido agregado al carrito!
+            </p>
+            <NavLink to="/products">
+              <button>Seguir comprando</button>
+            </NavLink>
+            <NavLink to="/cart">
+              <button>Terminar compra</button>
+            </NavLink>
+          </>
+        )}
+      </>
+    )
   );
 }
 
