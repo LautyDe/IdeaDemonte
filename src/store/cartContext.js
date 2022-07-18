@@ -12,7 +12,7 @@ export function CartContextProvider({ children }) {
   const [cart, setCart] = useState([]);
 
   const addToCart = (item, cant) => {
-    if (cart.includes(item.id)) {
+    if (isInCart(item.id)) {
       const newCart = cart.map((cartItem) => {
         if (cartItem.id === item.id) {
           const copyItem = { ...cartItem };
@@ -27,6 +27,10 @@ export function CartContextProvider({ children }) {
       const newItem = { ...item, cant };
       setCart([...cart, newItem]);
     }
+  };
+
+  const isInCart = (id) => {
+    return cart.find((i) => i.id == id);
   };
 
   const removeFromCart = (id) => {
