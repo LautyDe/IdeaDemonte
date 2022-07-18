@@ -33,7 +33,7 @@ function CardDetail(props) {
             <p className="redirection">
               Su producto ha sido agregado al carrito!
             </p>
-            <NavLink to="/products">
+            <NavLink to="/shop">
               <button>Seguir comprando</button>
             </NavLink>
             <NavLink to="/cart">

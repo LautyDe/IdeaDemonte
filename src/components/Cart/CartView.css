@@ -1,0 +1,16 @@
+.shopLink {
+  color: white;
+}
+
+.noItems {
+  text-align: center;
+}
+
+.yesItems {
+  text-align: center;
+}
+
+.remove {
+  color: red;
+  background-color: black;
+}

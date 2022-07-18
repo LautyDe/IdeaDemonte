@@ -45,8 +45,33 @@ export function CartContextProvider({ children }) {
     setCart([]);
   };
 
+  const cantInCart = () => {
+    let total = 0;
+    cart.forEach((item) => {
+      total += item.cant;
+    });
+    return total;
+  };
+
+  const priceInCart = () => {
+    let total = 0;
+    cart.forEach((item) => {
+      total += item.price * item.cant;
+    });
+    return total;
+  };
+
   return (
-    <Provider value={{ cart, addToCart, removeFromCart, clearCart }}>
+    <Provider
+      value={{
+        cart,
+        addToCart,
+        removeFromCart,
+        clearCart,
+        cantInCart,
+        priceInCart,
+      }}
+    >
       {children}
     </Provider>
   );
