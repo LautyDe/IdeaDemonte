@@ -3,6 +3,7 @@ import "bootstrap";
 import "./Shop.css";
 import { useEffect, useState } from "react";
 import Card from "../Card/Card";
+import { getAllProducts } from "../../services/firestore";
 
 function Shop() {
   const [info, setInfo] = useState([]);
@@ -10,11 +11,12 @@ function Shop() {
 
   useEffect(() => {
     setIsLoading(true);
+
     setTimeout(() => {
-      fetch("data.json")
-        .then((resp) => resp.json())
-        .then((data) => setInfo(data));
-      setIsLoading(false);
+      getAllProducts().then((data) => {
+        setIsLoading(false);
+        setInfo(data);
+      });
     }, 1000);
   }, []);
 
