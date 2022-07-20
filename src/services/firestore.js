@@ -5,10 +5,7 @@ import {
   getDoc,
   collection,
   doc,
-  query,
-  where,
 } from "firebase/firestore";
-import { useParams } from "react-router-dom";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDYlHm_ikG-wg3wJX7i8JcMyxyhPztFyuQ",
@@ -21,10 +18,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-
-export function testDB() {
-  console.log(db);
-}
 
 export async function getAllProducts() {
   const productsCollectionRef = collection(db, "products");
@@ -41,9 +34,16 @@ export async function getAllProducts() {
 
 export async function getProduct(id) {
   const productsCollectionRef = collection(db, "products");
-  const productRef = doc(productsCollectionRef, id);
+  const productRef = doc(productsCollectionRef, "5");
+  /* aca se rompe, si dejo el id como "5" funciona, si pongo id me deja la promesa como rejected */
   const docSnapshot = await getDoc(productRef);
-  console.log(docSnapshot);
+  console.log("Consola de test: ", docSnapshot);
+  const product = {
+    ...docSnapshot.data(),
+    id: docSnapshot.id,
+  };
+
+  return product;
 }
 
 export default db;
