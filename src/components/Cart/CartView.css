@@ -6,6 +6,7 @@
 .yesItems,
 .orderFinished {
   text-align: center;
+  padding: 14rem;
 }
 
 .remove {
