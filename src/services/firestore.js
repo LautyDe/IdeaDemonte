@@ -59,17 +59,4 @@ export async function createBuyOrder(orderData) {
   alert("Su compra ha sido realizada, este es el id: " + orderDoc.id);
 }
 
-/* export async function getOrderData(id) {
-  const myColec = collection(db, "buyOrders");
-  const productRef = doc(myColec, id);
-  const docSnapshot = await getDoc(productRef);
-  console.log("Consola de test: ", docSnapshot);
-  const product = {
-    ...docSnapshot.data(),
-    id: docSnapshot.id,
-  };
-
-  return product;
-} */
-
 export default db;
