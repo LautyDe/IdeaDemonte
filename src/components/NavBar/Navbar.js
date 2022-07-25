@@ -53,7 +53,7 @@ function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link active" to="/products">
+                <NavLink className="nav-link active" to="/shop">
                   Shop
                 </NavLink>
               </li>
