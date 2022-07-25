@@ -34,8 +34,7 @@ export async function getAllProducts() {
 
 export async function getProduct(id) {
   const productsCollectionRef = collection(db, "products");
-  const productRef = doc(productsCollectionRef, "5");
-  /* aca se rompe, si dejo el id como "5" funciona, si pongo id me deja la promesa como rejected */
+  const productRef = doc(productsCollectionRef, id);
   const docSnapshot = await getDoc(productRef);
   console.log("Consola de test: ", docSnapshot);
   const product = {

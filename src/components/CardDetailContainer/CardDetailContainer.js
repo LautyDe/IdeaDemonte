@@ -9,7 +9,7 @@ function CardDetailContainer() {
   const [cardFetch, setCardFetch] = useState([]);
 
   const fetchDetail = () => {
-    getProduct(params).then((data) => {
+    getProduct(params.id).then((data) => {
       setCardFetch(data);
     });
   };

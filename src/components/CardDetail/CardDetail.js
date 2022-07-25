@@ -6,7 +6,9 @@ import useCartContext from "../../store/CartContext";
 function CardDetail(props) {
   const [noCount, setNoCount] = useState(false);
   const { addToCart } = useCartContext();
-  const imgPath = require(`../../assets${props.item.image}`);
+  const imgPath = props.item.image
+    ? require(`../../assets${props.item.image}`)
+    : "https://grupoact.com.ar/wp-content/uploads/2020/04/placeholder.png";
 
   function onAdd(count) {
     addToCart(props.item, count);
