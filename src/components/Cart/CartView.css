@@ -2,11 +2,9 @@
   color: white;
 }
 
-.noItems {
-  text-align: center;
-}
-
-.yesItems {
+.noItems,
+.yesItems,
+.orderFinished {
   text-align: center;
 }
 

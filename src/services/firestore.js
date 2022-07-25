@@ -4,8 +4,12 @@ import {
   getDocs,
   getDoc,
   collection,
+  Timestamp,
   doc,
+  addDoc,
+  Firestore,
 } from "firebase/firestore";
+import { Alert } from "bootstrap";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDYlHm_ikG-wg3wJX7i8JcMyxyhPztFyuQ",
@@ -44,5 +48,28 @@ export async function getProduct(id) {
 
   return product;
 }
+
+export async function createBuyOrder(orderData) {
+  const buyTimer = Timestamp.now();
+  const orderWithDate = { ...orderData, date: buyTimer };
+
+  const myColec = collection(db, "buyOrders");
+  const orderDoc = await addDoc(myColec, orderWithDate);
+  console.log("order Id de consola: ", orderDoc.id);
+  alert("Su compra ha sido realizada, este es el id: " + orderDoc.id);
+}
+
+/* export async function getOrderData(id) {
+  const myColec = collection(db, "buyOrders");
+  const productRef = doc(myColec, id);
+  const docSnapshot = await getDoc(productRef);
+  console.log("Consola de test: ", docSnapshot);
+  const product = {
+    ...docSnapshot.data(),
+    id: docSnapshot.id,
+  };
+
+  return product;
+} */
 
 export default db;
