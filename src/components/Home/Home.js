@@ -1,11 +1,17 @@
+import FAQ from "../FAQ/FAQ";
+import HomeServices from "../HomeServices/HomeServices";
+import Reviews from "../Reviews/Reviews";
+import Works from "../Works/Works";
 import "./Home.css";
 
 function Home() {
   return (
-    <h2 className="home">
-      Este es el Home, despues agregare videos e imagenes para completar la
-      pagina web.
-    </h2>
+    <main>
+      <HomeServices />
+      <Works />
+      <FAQ />
+      <Reviews />
+    </main>
   );
 }
 

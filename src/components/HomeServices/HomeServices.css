@@ -1,0 +1,19 @@
+.servicesVideo {
+  width: 100%;
+  height: 300px;
+}
+
+.servicesText {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: auto;
+  text-align: left;
+}
+
+h2 {
+  padding: 1rem;
+}

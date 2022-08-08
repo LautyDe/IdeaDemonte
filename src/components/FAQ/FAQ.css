@@ -1,0 +1,21 @@
+.faqContainer {
+  margin: 1.5em 0;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.faqTitle {
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.faqText {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  padding: 1rem;
+}

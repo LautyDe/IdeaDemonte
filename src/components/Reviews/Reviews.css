@@ -1,0 +1,11 @@
+.reviewText {
+  margin: 0;
+  text-align: center;
+}
+
+.starsImg {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
