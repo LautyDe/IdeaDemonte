@@ -8,6 +8,7 @@ import CartView from "./components/Cart/CartView";
 import NotFound from "./components/NotFound/NotFound";
 import CardDetailContainer from "./components/CardDetailContainer/CardDetailContainer";
 import Shop from "./components/Shop/Shop";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/cart" element={<CartView />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
+      <Footer />
     </div>
   );
 }
