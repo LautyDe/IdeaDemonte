@@ -6,14 +6,18 @@ BarberStyle es una barberia que incluye en su tienda online productos para barbe
 
 Clone el repositorio y vaya a su consola, donde debera correr el siguiente comando para instalar todas las dependencias:
 
-### `npm install`
+## `npm install`
 
-#### Comenzar a ver desde el navegador
+### Comenzar a ver desde el navegador
 
 Para comenzar a visualizar la pagina en el navegador y visualizar los cambios que se vayan guardando en vivo, corra el siguiente comando en su consola:
 
-##### `npm start`
+### `npm start`
 
-###### Dependencias
+#### Dependencias
 
 Esta app cuenta con Bootstrap, react router dom, FireBase, FontAwesome y react router hash link.
+
+##### Link al GIF de la entrega:
+
+https://github.com/LautyDe/IdeaDemonte/commit/4272e1410df6ca21043af7116404538c95083938
