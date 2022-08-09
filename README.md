@@ -20,4 +20,4 @@ Esta app cuenta con Bootstrap, react router dom, FireBase, FontAwesome y react r
 
 ##### Link al GIF de la entrega:
 
-![alt text](https://../../src/assets/BarberStyle.gif)
+![link](src\assets\BarberStyle.gif)
