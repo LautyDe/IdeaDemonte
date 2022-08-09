@@ -2,14 +2,31 @@
   color: white;
 }
 
-.noItems,
-.yesItems,
-.orderFinished {
-  text-align: center;
-  padding: 14rem;
+.noItemsText {
+  place-self: center;
 }
 
+.yesItems {
+  text-align: center;
+  padding-top: 1em;
+  height: 100%;
+}
+
+.noItems,
+.orderFinished {
+  height: 70.5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.finishText {
+  align-self: center;
+}
 .remove {
   color: red;
   background-color: black;
+}
+
+.totalPrice {
+  font-size: xx-large;
 }

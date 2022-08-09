@@ -9,10 +9,12 @@
 .worksContainer {
   display: flex;
   justify-content: space-around;
+  margin: 0 auto;
 }
 
 .worksText {
   text-align: center;
+  margin: 0;
 }
 
 h2 {

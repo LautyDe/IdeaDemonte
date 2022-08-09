@@ -19,7 +19,7 @@ function CardDetailContainer() {
   }, []);
 
   return (
-    <section className="container">
+    <section className="cardsContainer">
       <CardDetail item={cardFetch} />
     </section>
   );

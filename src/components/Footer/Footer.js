@@ -1,43 +1,47 @@
 import "./Footer.css";
+import {
+  faInstagram,
+  faTwitter,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
     <footer>
-      <div class="container footerContainer">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <section>
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container footerContainer">
           <div class="col-md-4 d-flex align-items-center">
-            <a
-              href="#start"
-              class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-            >
+            <NavLink className="navbar-brand" to="/home">
               <img
+                class="footerLogo"
                 src={require("../../assets/LogoBarberStyle.png")}
                 alt="Logo BarberStyle"
-                class="footerLogo"
               />
-            </a>
+            </NavLink>
             <span class="text-white">&copy; Barber Style</span>
           </div>
 
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex socialNetworks">
             <li class="ms-3">
               <a class="text-muted" href="https://twitter.com/">
-                <svg class="bi" width="24" height="24"></svg>
+                <FontAwesomeIcon className="icons" icon={faTwitter} />
               </a>
             </li>
             <li class="ms-3">
               <a class="text-muted" href="https://www.instagram.com/">
-                <svg class="bi" width="24" height="24"></svg>
+                <FontAwesomeIcon className="icons" icon={faInstagram} />
               </a>
             </li>
             <li class="ms-3">
               <a class="text-muted" href="https://www.facebook.com/">
-                <svg class="bi" width="24" height="24"></svg>
+                <FontAwesomeIcon className="icons" icon={faFacebook} />
               </a>
             </li>
           </ul>
-        </footer>
-      </div>
+        </div>
+      </section>
     </footer>
   );
 }

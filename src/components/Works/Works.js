@@ -2,9 +2,9 @@ import "./Works.css";
 
 function Works() {
   return (
-    <section class="container works" id="works">
+    <section class=" works" id="works">
       <h2>Works</h2>
-      <div class="row worksContainer">
+      <div class="row worksContainer container">
         <div class="col-lg-4 col-md-12 col-sm-12">
           <img
             src={require(`../../assets/Imagen-1.jpg`)}

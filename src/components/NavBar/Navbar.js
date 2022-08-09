@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import CartWidget from "../CartWidget/CartWidget";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Navbar() {
   return (
@@ -33,24 +34,24 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink className="nav-link active" to="/home">
+                <HashLink className="nav-link active" to="/home#services">
                   Services
-                </NavLink>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link active" to="/home">
+                <HashLink className="nav-link active" to="/home#works">
                   Works
-                </NavLink>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link active" to="/home">
+                <HashLink className="nav-link active" to="/home#faq">
                   FAQ
-                </NavLink>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link active" to="/home">
+                <HashLink className="nav-link active" to="/home#reviews">
                   Reviews
-                </NavLink>
+                </HashLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link active" to="/shop">

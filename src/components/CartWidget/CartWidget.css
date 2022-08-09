@@ -17,6 +17,8 @@ header nav div .navbar-nav .nav-item {
 }
 .widgetCant {
   text-decoration: none;
+  justify-content: center;
   color: white;
   background-color: black;
+  padding: 0 1rem;
 }

@@ -6,12 +6,12 @@ import "./Home.css";
 
 function Home() {
   return (
-    <main>
+    <section className="containerA">
       <HomeServices />
       <Works />
       <FAQ />
       <Reviews />
-    </main>
+    </section>
   );
 }
 

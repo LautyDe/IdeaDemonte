@@ -1,5 +1,5 @@
 .faqContainer {
-  margin: 1.5em 0;
+  margin: o auto;
   justify-content: space-around;
   align-self: center;
 }
@@ -14,8 +14,4 @@
   height: 100%;
   display: flex;
   align-items: center;
-}
-
-h2 {
-  padding: 1rem;
 }

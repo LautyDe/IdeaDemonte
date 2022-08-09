@@ -2,9 +2,9 @@ import "./HomeServices.css";
 
 function HomeServices() {
   return (
-    <section class="container services" id="services">
+    <section id="services">
       <h2>Services</h2>
-      <div class="row">
+      <div class="row container serviceContainer">
         <div class="col-lg-6 col-md 6 col-sm-12">
           <div class="servicesVideo">
             <iframe

@@ -6,14 +6,14 @@
 .servicesText {
   display: flex;
   align-items: center;
-}
-
-.container {
-  margin: 0 auto;
-  width: auto;
   text-align: left;
 }
 
+.serviceContainer {
+  margin: 0 auto;
+}
+
 h2 {
-  padding: 1rem;
+  text-align: left;
+  margin: 2rem 4rem;
 }

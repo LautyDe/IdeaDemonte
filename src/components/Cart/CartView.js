@@ -33,21 +33,22 @@ function CartView() {
   if (cart.length === 0) {
     if (order == false) {
       return (
-        <h2 className="noItems">
-          No hay items en el carrito, vea nuestro{" "}
-          {
-            <NavLink to="/shop" className="shopLink">
-              <a>shop</a>
-            </NavLink>
-          }{" "}
-          para seleccionar productos!
-        </h2>
+        <div className="noItems">
+          <h3 className="noItemsText">
+            No hay items en el carrito, vea nuestro{" "}
+            {
+              <NavLink to="/shop" className="shopLink">
+                <a>shop</a>
+              </NavLink>
+            }{" "}
+            para seleccionar productos!
+          </h3>
+        </div>
       );
     } else {
       return (
         <div className="orderFinished">
-          <h2>Su producto ha sido agregado al carrito!</h2>
-          <h4>{` `}</h4>
+          <h3 className="finishText">Su compra ha sido finalizada!</h3>
         </div>
       );
     }
@@ -56,10 +57,10 @@ function CartView() {
       <div className="yesItems">
         {cart.map((itemCart) => {
           return (
-            <div>
-              <h2>Producto: {itemCart.name}</h2>
+            <div className="cartShop">
+              <h3>Producto: {itemCart.name}</h3>
               <h5>Cantidad: {itemCart.cant}</h5>
-              <h3>Precio: ${itemCart.cant * itemCart.price}</h3>
+              <h4>Precio: ${itemCart.cant * itemCart.price}</h4>
               <button
                 onClick={() => removeFromCart(itemCart.id)}
                 className="remove"
@@ -69,7 +70,7 @@ function CartView() {
             </div>
           );
         })}
-        <h2>Precio total: ${priceInCart()}</h2>
+        <h3 className="totalPrice">Precio total: ${priceInCart()}</h3>
         <div>
           <button onClick={clearCart}>Vaciar carrito</button>
           <button onClick={buyHandler}>Terminar compra!</button>

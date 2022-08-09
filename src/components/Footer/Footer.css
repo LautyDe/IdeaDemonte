@@ -1,8 +1,26 @@
 .footerLogo {
   width: 35px;
   height: 35px;
+  margin-right: 1em;
 }
 
 .footerContainer {
   background-color: #262626;
+  width: 100%;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+  color: black;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+.socialNetworks {
+  margin-right: 1em;
 }

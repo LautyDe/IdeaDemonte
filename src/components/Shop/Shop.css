@@ -1,7 +1,5 @@
 .cuerpo {
-  height: auto;
-  background-color: black;
-  padding-top: 30px;
+  height: 100%;
   justify-content: space-around;
   align-items: center;
 }
@@ -18,4 +16,5 @@
   color: white;
   display: flex;
   justify-content: center;
+  margin: 0;
 }
