@@ -4,7 +4,7 @@ BarberStyle es una barberia que incluye en su tienda online productos para barbe
 
 ## Instalacion
 
-Clone el repositorio y vaya su consola, donde correra el siguiente comando para instalar todas las dependencias:
+Clone el repositorio y vaya a su consola, donde debera correr el siguiente comando para instalar todas las dependencias:
 
 ### `npm install`
 
