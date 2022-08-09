@@ -5,7 +5,7 @@ import {
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Footer() {
   return (
@@ -13,13 +13,13 @@ function Footer() {
       <section>
         <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container footerContainer">
           <div class="col-md-4 d-flex align-items-center">
-            <NavLink className="navbar-brand" to="/home">
+            <HashLink className="navbar-brand" to="/home#start">
               <img
                 class="footerLogo"
                 src={require("../../assets/LogoBarberStyle.png")}
                 alt="Logo BarberStyle"
               />
-            </NavLink>
+            </HashLink>
             <span class="text-white">&copy; Barber Style</span>
           </div>
 

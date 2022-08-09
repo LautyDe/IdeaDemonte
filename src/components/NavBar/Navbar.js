@@ -9,16 +9,16 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <div>
-            <NavLink className="navbar-brand" to="/home">
+            <HashLink className="navbar-brand" to="/home#start">
               <img
                 class="logo-img"
                 src={require("../../assets/LogoBarberStyle.png")}
                 alt="Logo BarberStyle"
               />
-            </NavLink>
-            <NavLink to="/home">
+            </HashLink>
+            <HashLink to="/home#start">
               <h1>BarberStyle</h1>
-            </NavLink>
+            </HashLink>
           </div>
           <button
             className="navbar-toggler"
