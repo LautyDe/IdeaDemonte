@@ -18,6 +18,6 @@ Para comenzar a visualizar la pagina en el navegador y visualizar los cambios qu
 
 Esta app cuenta con Bootstrap, react router dom, FireBase, FontAwesome y react router hash link.
 
-##### Link al GIF de la entrega:
+##### GIF de la entrega:
 
-![link](src\assets\BarberStyle.gif)
+![link](BarberStyle.gif)
