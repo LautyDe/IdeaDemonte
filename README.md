@@ -20,4 +20,4 @@ Esta app cuenta con Bootstrap, react router dom, FireBase, FontAwesome y react r
 
 ##### Link al GIF de la entrega:
 
-https://github.com/LautyDe/IdeaDemonte/commit/4272e1410df6ca21043af7116404538c95083938
+![alt text](https://../../src/assets/BarberStyle.gif)
